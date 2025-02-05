@@ -98,3 +98,6 @@ select max
 
 --pgadmin
 --hostname: pgdatabase; user,pw: postgres
+
+
+winpty docker build -t taxi_ingest:v001 .
