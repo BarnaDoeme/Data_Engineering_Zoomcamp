@@ -1,0 +1,15 @@
+terminal:
+cd documents/github/data_Engineering_Zoomcamp/03-data-warehousing
+
+--create bucket
+--edit load_yellow_data.py: BUCKET_NAME = "de_zoomcamp_2025" & CREDENTIALS_FILE = "cred.json" 
+$ pip install --upgrade google-cloud-storage
+python load_yellow_data.py
+
+--create BQ table
+CREATE OR REPLACE EXTERNAL TABLE `de_zoomcamp_2025.yellow_data.yellow_tripdata_external`
+OPTIONS (
+  format = 'PARQUET',
+  uris = ['gs://de_zoomcamp_2025/*.parquet']
+);
+
