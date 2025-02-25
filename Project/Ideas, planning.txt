@@ -1,0 +1,31 @@
+Topics, Data source: OpenMeteo, something sport related, Biology
+
+
+For performance: pe-aggregate data where possible, implement proper indexing, use materialized views,
+consider data partitioning and cache frequently accessed data
+
+Polars vs Pandas
+R
+
+Frondend: Power BI, Looker Studio, Tableau,
+ Streamlit, Plotly, https://www.preswald.com for whole etl+viz?
+
+
+
+
+Basic: Kestra, simpler pipeline, use llms, present in own DE zoomcamp repo
+Complex: airflow/kafka?, APIs, data modelling, more detailed dashboard, present on website+linkedin
+
+
+
+"Ooooh for containers? 
+
+Like use uv to build docker images? 
+
+Just use this in your Dockerfile.
+
+RUN pip install uv --no-cache
+
+COPY requirements.txt requirements.txt
+
+RUN uv pip install -r requirements.txt --system --no-cache"
